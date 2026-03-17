@@ -47,11 +47,11 @@ This project builds a binary classifier to predict whether a home loan borrower 
                                      
   - **Best Model: XGBoost (No SMOTE)**
                                      
-  - | Class        | Precision | Recall | F1-score | Support |
-  - |--------------|-----------|--------|----------|---------|
-  - | 0 (Non-default) | 0.9997 | 0.9999 | 0.9998  | 33,609  |
-  - | 1 (Default)     | 0.9998 | 0.9990 | 0.9994  | 10,992  |
-  - | **Accuracy** | | | **0.9997** | 44,601 |
+     | Class        | Precision | Recall | F1-score | Support |
+     |--------------|-----------|--------|----------|---------|
+     | 0 (Non-default) | 0.9997 | 0.9999 | 0.9998  | 33,609  |
+     | 1 (Default)     | 0.9998 | 0.9990 | 0.9994  | 10,992  |
+     | **Accuracy** | | | **0.9997** | 44,601 |
                                      
   - **Confusion Matrix:**
     - TN = 33,607 | FP = 2
@@ -70,4 +70,4 @@ This project builds a binary classifier to predict whether a home loan borrower 
                                                        
 ## 🔹 Executive Summary
                                                        
-  This project predicts home loan defaults using a 148,670-record Kaggle dataset. After label encoding of categorical features, XGBoost with Bayesian hyperparameter tuning achieved near-perfect AUC (~1.00) with only 13 misclassifications on the test set. The extremely high performance is likely attributable to the synthetic nature of the dataset. Despite this, the end-to-end pipeline (EDA → encoding → XGBoost tuning → threshold analysis → Confusion Matrix) demonstrates a production-ready framework that can be applied to real loan default prediction with appropriate data and threshold calibration.
+     This project predicts home loan defaults using a 148,670-record Kaggle dataset. After label encoding of categorical features, XGBoost with Bayesian hyperparameter tuning achieved near-perfect AUC (~1.00) with only 13 misclassifications on the test set. The extremely high performance is likely attributable to the synthetic nature of the dataset. Despite this, the end-to-end pipeline (EDA → encoding → XGBoost tuning → threshold analysis → Confusion Matrix) demonstrates a production-ready framework that can be applied to real loan default prediction with appropriate data and threshold calibration.
